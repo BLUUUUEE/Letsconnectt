@@ -45,7 +45,7 @@ const MyApplications = () => {
   const deleteApplication = (id) => {
     try {
       axios
-        .delete(`https://finder-17jc.onrender.com/api/v1/application/delete/${id}`, {
+        .delete(`http://localhost:4000/api/v1/application/delete/${id}`, {
           withCredentials: true,
         })
         .then((res) => {
